@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADINGFLIX</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body{
+            height: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header__title"><a href="http://10.0.0.1" style="color: #fff;">ADINGFLIX</a></div>
+        <div class="search-container" id="searchContainer">
+            <input type="text" id="searchInput" class="search-input" placeholder="Enter movie title..." aria-label="Enter movie title">
+            <button id="searchButton" class="search-button">Search</button>
+        </div>
+    </div>
+
+    <div id="movielist">
+        <div id="movies-search" class="movie-list"></div>
+        <div id="moviee-list" class="title" style="background-color: #414141;padding-left: 8px;border-radius: 3px;">My list</div>
+        <div id="movies-list" class="movie-list"></div>
+        <div style="visibility: collapse;">
+        <div class="title" style="background-color: #414141;padding-left: 8px;border-radius: 3px;">Trending this week</div>
+        <div id="movies-trending" class="movie-list"></div>
+        <div class="title" style="background-color: #414141;padding-left: 8px;border-radius: 3px;"> Movie suggestions</div>
+        <div id="movies-recommend" class="movie-list"></div>
+        <div class="title" style="background-color: #414141;padding-left: 8px;border-radius: 3px;">Top rated movies in the Philippines</div>
+        <div id="movies-toprated" class="movie-list"></div>
+        <div class="title" style="background-color: #414141;padding-left: 8px;border-radius: 3px;">Popular titles</div>
+        <div id="movies-popular" class="movie-list"></div>
+        <div class="title" style="background-color: #414141;padding-left: 8px;border-radius: 3px;">TV series</div>
+        <div id="series-picks" class="movie-list"></div>
+        </div>
+    </div>    
+
+    <div id="moviePlayerContainer" class="hidden">
+        <div id="moviePlayer" class="movie-player">
+            <iframe id="videoFrame" src="" class="movie-iframe" allowfullscreen="true"></iframe>
+            <h2 id="movieTitle" class="movie-title title"></h2>
+            <p id="movieOverview" class="movie-overview"></p>
+            <p id="movieReleaseDate" class="movie-release-date"></p>
+            <p id="movieRating" class="movie-rating"></p>
+            <button id="backButton" class="back-button">Back to Favorite List</button>
+            <button id="addToListButton" class="back-button">Add to My Favorite</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
